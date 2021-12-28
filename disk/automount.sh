@@ -49,10 +49,7 @@ function Automount(){
 }
 SELECTION="$1"
 case "$SELECTION" in
-	"--automount"|"automount")
-		Automount "$2" "$3" "$4"
-		;;
 	*)
-		echo "Not command found"
+		Automount "$2" "$3" "$4"
 		;;
 esac
